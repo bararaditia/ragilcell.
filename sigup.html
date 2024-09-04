@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ragil Cell</title>
+    <link rel="shortcut icon" type="image/x-icon" href="image/CEL.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<style>
+    body {
+        background-color: #222222;
+    }
+
+    .registration-form {
+        padding: 30px 0; /* Reduced padding */
+        position: relative;
+    }
+
+    .registration-form form {
+        background-color: #fff;
+        max-width: 500px; /* Reduced max-width */
+        margin: auto;
+        padding: 20px 30px; /* Reduced padding */
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
+    }
+
+    .registration-form .form-icon {
+        text-align: center;
+        background-color: #222222;
+        border-radius: 50%;
+        color: white;
+        width: 80px; /* Reduced size */
+        height: 80px;
+        margin: auto;
+        margin-bottom: 30px; /* Reduced margin */
+        line-height: 80px;
+    }
+
+    .registration-form .form-icon img {
+        width: 50px;
+        height: auto;
+    }
+
+    .registration-form .item {
+        border-radius: 10px;
+        margin-bottom: 15px; /* Reduced margin */
+        padding: 8px 15px; /* Reduced padding */
+    }
+
+    .registration-form .create-account {
+        border-radius: 20px;
+        padding: 10px 20px;
+        font-size: 16px; /* Reduced font size */
+        font-weight: bold;
+        background-color: #DB1313;
+        border: none;
+        color: white;
+        margin-top: 10px; /* Reduced margin */
+    }
+
+    .registration-form .social-media {
+        max-width: 500px; /* Reduced max-width */
+        background-color: #fff;
+        margin: auto;
+        padding: 10px 0; /* Reduced padding */
+        text-align: center;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        color: #222222;
+        border-top: 1px solid #dee9ff;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
+    }
+
+    .registration-form .social-icons {
+        margin-top: 20px; /* Reduced margin */
+        margin-bottom: 16px;
+    }
+
+    .registration-form .social-icons a {
+        font-size: 20px;
+        margin: 0 3px;
+        color: #222222;
+        border: 1px solid;
+        border-radius: 50%;
+        width: 40px; /* Reduced size */
+        display: inline-block;
+        height: 40px;
+        text-align: center;
+        background-color: #fff;
+        line-height: 40px;
+    }
+
+    .registration-form .social-icons a:hover {
+        text-decoration: none;
+        opacity: 0.6;
+    }
+
+    .registration-form .close-icon {
+        position: absolute;
+        top: 15px; /* Adjusted positioning */
+        right: 15px;
+        color: #fff;
+        font-size: 25px; /* Reduced size */
+        cursor: pointer;
+    }
+
+    @media (max-width: 576px) {
+        .registration-form form {
+            padding: 20px 15px; /* Further reduced padding for smaller screens */
+        }
+
+        .registration-form .form-icon {
+            width: 60px;
+            height: 60px;
+            font-size: 25px;
+            line-height: 60px;
+        }
+        
+        .registration-form .close-icon {
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+        }
+    }
+</style>
+<body>
+    <div class="registration-form">
+        <span id="close" class="close-icon" onclick="window.location.href='home.html'">&times;</span>
+        <form action="register_user.php" method="POST">
+            <div class="form-icon">
+                <img src="image/CEL.png" alt="">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control item" id="username" name="username" placeholder="Username" required>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control item" id="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control item" id="password" name="password" placeholder="Password" required>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control item" id="phone-number" name="phone_number" placeholder="Phone Number" required>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control item" id="address" name="address" placeholder="Address" required>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-block create-account">SIGN UP</button>
+            </div>
+        </form>
+        
+        <div class="social-media">
+            <h5>Did you have an account?</h5>
+            <a href="sigin.html"><h6>SIGN IN</h6></a>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</body>
+</html>
